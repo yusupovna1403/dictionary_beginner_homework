@@ -6,4 +6,24 @@ def find_max_key(data: dict):
     Returns:
         int: The maximum key in the dictionary.
     """
-    return 
+    
+    lst = []
+    for i in data.keys():
+        if type(i)==int or type(i)==float:
+            lst.append(i)
+    
+    max = lst[0]
+    i = 1
+    for i in lst:
+        if i > max:
+            max = i
+    
+
+    return max
+data = {
+    1: 'a', 
+    2: 'b', 
+    3: 'c'
+  }
+print(find_max_key(data))
+ 
