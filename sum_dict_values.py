@@ -7,9 +7,6 @@ def sum_dict_values(data: dict) -> int:
         int: The sum of all values in the dictionary
     '''
     sum = 0
-    for i in data.keys():
-        if type(i) == int or type(i) == float:
-            sum+=i
     for i in data.values():
         if type(i) == int or type(i) == float:
             sum+=i
